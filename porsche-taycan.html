@@ -4,7 +4,105 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Porsche Taycan | Car Dealership</title>
-    <link rel="stylesheet" href="porsche.css">
+    <style>
+        /* Global Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #111; /* Dark background for a premium feel */
+            color: white;
+        }
+
+        /* Header */
+        header {
+            background-color: black;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* Navigation */
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-size: 18px;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #ff6600; /* Yellow accent */
+        }
+
+        /* Car Details Section */
+        .car-details {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* Car Image */
+        .car-details img {
+            width: 100%;
+            border-radius: 10px;
+            box-shadow: 0px 8px 20px rgba(255, 255, 255, 0.2);
+        }
+
+        /* Car Title */
+        h2 {
+            color: #ff4757; /* Porsche Red */
+            margin-top: 15px;
+        }
+
+        /* Features List */
+        .car-details ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .car-details ul li {
+            background: rgba(255, 255, 255, 0.1); /* Subtle transparency */
+            margin: 5px 0;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        /* Button */
+        .btn {
+            display: inline-block;
+            padding: 12px 24px;
+            background: #ff4757;
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            border-radius: 5px;
+            transition: background 0.3s, transform 0.2s;
+            margin-top: 15px;
+        }
+
+        .btn:hover {
+            background: #d90429;
+            transform: scale(1.05);
+        }
+
+        /* Footer */
+        footer {
+            background: black;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+            margin-top: 30px;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -21,9 +119,10 @@
 
     <main>
         <section class="car-details">
-            <img src="images/2025-Porsche-Taycan.jpg" alt="Porsche Taycan">
+            <img src="images/2025-Porsche-Taycan.jpg" alt="2025 Porsche Taycan Turbo S in a showroom">
             <h2>2025 Porsche Taycan Turbo S</h2>
-            <p>The **Porsche Taycan Turbo S** is an all-electric sports sedan that offers incredible acceleration and performance. With **750 HP** and **0-100 km/h in just 2.8 seconds**, it’s one of the fastest EVs on the market.</p>
+            <p>The <strong>Porsche Taycan Turbo S</strong> is an all-electric sports sedan that offers incredible acceleration and performance. With <strong>750 HP</strong> and <strong>0-100 km/h in just 2.8 seconds</strong>, it’s one of the fastest EVs on the market.</p>
+            
             <h3>Key Features:</h3>
             <ul>
                 <li>Dual Electric Motors with AWD</li>
@@ -31,13 +130,14 @@
                 <li>800V Fast Charging System</li>
                 <li>Luxurious Interior with OLED Displays</li>
             </ul>
+            
             <p><strong>Price:</strong> ₹ 1.50 Crore</p>
-            <a href="checkout.html" class="btn">Buy Now</a>
+            <a href="checkout.html" class="btn" role="button">Buy Now</a>
         </section>
     </main>
 
     <footer>
         <p>&copy; 2025 Car Dealership | All Rights Reserved.</p>
     </footer>
-</body>
+</body> 
 </html>
