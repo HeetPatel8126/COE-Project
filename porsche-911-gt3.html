@@ -4,7 +4,98 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Porsche 911 GT3 | Car Dealership</title>
-    <link rel="stylesheet" href="porsche.css">
+    <style>
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #111; 
+            color: white;
+        }
+
+        header {
+            background-color: black;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* Navigation */
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-size: 18px;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #ff6600; 
+        }
+
+        .car-details {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .car-details img {
+            width: 100%;
+            border-radius: 10px;
+            box-shadow: 0px 8px 20px rgba(255, 255, 255, 0.2);
+        }
+
+        h2 {
+            color: #ff4757; 
+            margin-top: 15px;
+        }
+
+        .car-details ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .car-details ul li {
+            background: rgba(255, 255, 255, 0.1); 
+            margin: 5px 0;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        
+        .btn {
+            display: inline-block;
+            padding: 12px 24px;
+            background: #ff4757;
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            border-radius: 5px;
+            transition: background 0.3s, transform 0.2s;
+            margin-top: 15px;
+        }
+
+        .btn:hover {
+            background: #d90429;
+            transform: scale(1.05);
+        }
+
+        footer {
+            background: black;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+            margin-top: 30px;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -21,9 +112,10 @@
 
     <main>
         <section class="car-details">
-            <img src="Images/porsche-911-gt3.jpg" alt="Porsche 911 GT3">
+            <img src="Images/porsche-911-gt3.jpg" alt="Porsche 911 GT3 in a showroom">
             <h2>2025 Porsche 911 GT3</h2>
-            <p>The Porsche 911 GT3 is a track-focused sports car powered by a **4.0L naturally aspirated Flat-6 engine**, producing **502 HP**. With a **0-100 km/h time of 3.2 seconds** and a **top speed of 320 km/h**, it's built for speed and precision.</p>
+            <p>The <strong>Porsche 911 GT3</strong> is a track-focused sports car powered by a <strong>4.0L naturally aspirated Flat-6 engine</strong>, producing <strong>502 HP</strong>. With a <strong>0-100 km/h time of 3.2 seconds</strong> and a <strong>top speed of 320 km/h</strong>, it's built for speed and precision.</p>
+            
             <h3>Key Features:</h3>
             <ul>
                 <li>Aerodynamic Carbon Fiber Body</li>
@@ -31,8 +123,9 @@
                 <li>Porsche Active Suspension Management (PASM)</li>
                 <li>10.9-inch Touchscreen with Apple CarPlay</li>
             </ul>
+            
             <p><strong>Price:</strong> ₹ 1.95 Crore</p>
-            <a href="checkout.html" class="btn">Buy Now</a>
+            <a href="checkout.html" class="btn" role="button">Buy Now</a>
         </section>
     </main>
 
