@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap");
+
+body {
+    font-family: "Poppins", sans-serif;
+    background: linear-gradient(135deg, #1a1a1a, #333);
+    color: #ddd;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: rgba(34, 34, 34, 0.9);
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ff6600;
+}
+
+.about-section {
+    text-align: center;
+    padding: 40px;
+}
+
+.about-section h2 {
+    color: #ff6600;
+    font-size: 28px;
+}
+
+.about-section h3 {
+    color: #ff6600;
+    font-size: 24px;
+    margin-top: 20px;
+}
+
+.about-section p {
+    font-size: 18px;
+    line-height: 1.5;
+    max-width: 800px;
+    margin: 10px auto;
+}
+
+.about-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.about-section ul li {
+    font-size: 18px;
+    padding: 5px;
+    margin-top: 5px;
+    background: rgba(255, 255, 255, 0.1);
+    display: inline-block;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+footer {
+    text-align: center;
+    padding: 15px;
+    background: rgba(34, 34, 34, 0.9);
+    color: white;
+}

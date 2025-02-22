@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap");
+
+body {
+    font-family: "Poppins", sans-serif;
+    background: linear-gradient(135deg, #1a1a1a, #333);
+    color: #ddd;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: rgba(34, 34, 34, 0.9);
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ff6600;
+}
+
+.contact-section {
+    text-align: center;
+    padding: 40px;
+}
+
+.contact-section h2 {
+    color: #ff6600;
+    font-size: 28px;
+}
+
+.contact-section form {
+    max-width: 500px;
+    margin: 20px auto;
+    background: rgba(34, 34, 34, 0.9);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.5);
+}
+
+.contact-section label {
+    display: block;
+    font-size: 16px;
+    margin-top: 10px;
+    color: white;
+}
+
+.contact-section input, 
+.contact-section textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 2px solid #ff6600;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.15);
+    color: white;
+}
+
+.contact-section textarea {
+    height: 100px;
+}
+
+.contact-section button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 15px;
+    background: #ff6600;
+    border: none;
+    color: white;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.contact-section button:hover {
+    background: #e65c00;
+}
+
+footer {
+    text-align: center;
+    padding: 15px;
+    background: rgba(34, 34, 34, 0.9);
+    color: white;
+}
