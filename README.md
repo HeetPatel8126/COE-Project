@@ -25,9 +25,9 @@ CSS – Styling the website, including layout and responsiveness.
 Installation & Usage
 
 Clone this repository:
-
-git clone https://github.com/your-username/car-dealership-website.git
-
+```
+git clone https://github.com/your-username/COE Project.git
+```
 Open the project folder and launch index.html in your web browser.
 
 Folder Structure
