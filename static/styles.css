@@ -1,0 +1,213 @@
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes buttonPulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.08);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #1a1a1a, #333);
+  color: #ddd;
+  animation: fadeIn 1s ease-in-out;
+}
+
+header {
+  background: rgba(34, 34, 34, 0.9);
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+  position: relative;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  backdrop-filter: blur(10px);
+  animation: slideDown 0.8s ease-in-out;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+}
+
+nav ul li {
+  display: inline;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: bold;
+  transition: color 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+  color: #ff6600;
+}
+
+.search-bar {
+  text-align: center;
+  margin: 20px auto;
+}
+
+.search-bar input {
+  padding: 10px;
+  width: 250px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.search-bar button {
+  padding: 10px 15px;
+  background-color: #ff6600;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-left: 10px;
+}
+
+.search-bar button:hover {
+  background-color: #e65c00;
+}
+
+.hero {
+  text-align: center;
+  padding: 80px 50px;
+  background: rgb(2, 0, 36);
+  background: radial-gradient(
+    circle,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(0, 128, 128, 1) 50%,
+    rgba(0, 95, 95, 1) 100%
+  );
+  color: white;
+  animation: fadeIn 1.2s ease-in-out;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 25px;
+  background: #ff6600;
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  font-family: "Quantico", serif;
+  font-weight: 700;
+  font-style: normal;
+  border-radius: 50px;
+  transition: 0.3s ease-in-out;
+  animation: buttonPulse 2s infinite ease-in-out;
+}
+
+.btn:hover {
+  background: #ff4500;
+  transform: scale(1.1);
+}
+
+.car-listings {
+  text-align: center;
+  padding: 50px;
+  background: #222;
+}
+
+.car-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.car {
+  display: flex;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 25px;
+  border-radius: 15px;
+  width: 900px;
+  text-align: left;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  animation: slideIn 1s ease-in-out;
+  backdrop-filter: blur(10px);
+}
+
+.car:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 10px 30px rgba(255, 102, 0, 0.5);
+}
+
+.car img {
+  width: 420px;
+  height: auto;
+  border-radius: 10px;
+  margin-right: 20px;
+  transition: 0.3s ease-in-out;
+}
+
+.car img:hover {
+  transform: scale(1.05);
+}
+
+.car-info {
+  flex: 1;
+  font-size: 18px;
+  color: #fff;
+}
+
+footer {
+  background: rgba(34, 34, 34, 0.9);
+  color: white;
+  text-align: center;
+  padding: 15px;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  animation: fadeIn 1.5s ease-in-out;
+  backdrop-filter: blur(10px);
+}

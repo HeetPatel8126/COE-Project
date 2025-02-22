@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Car Dealership | Find Your Dream Car</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Londrina+Shadow&family=Quantico:ital,wght@0,400;0,700;1,400;1,700&family=Yatra+One&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Amarante&family=Londrina+Shadow&family=Quantico:ital,wght@0,400;0,700;1,400;1,700&family=Yatra+One&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="static/styles.css" />
+    <style>
+      header {
+        background: rgba(34, 34, 34, 0.9);
+        color: white;
+        padding: 20px 0;
+        text-align: center;
+        position: relative;
+        font-family: "Quantico", serif;
+        font-weight: 400;
+        font-style: italic;
+        width: 100%;
+        top: 0;
+        left: 0;
+        z-index: 1000;
+        backdrop-filter: blur(10px);
+      }
+      nav ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+      }
+      nav ul li {
+        display: inline;
+      }
+      nav ul li a {
+        color: white;
+        text-decoration: none;
+        font-size: 18px;
+        padding: 10px 15px;
+        transition: color 0.3s ease-in-out;
+      }
+      nav ul li a:hover {
+        color: #ff6600;
+      }
+      .hero {
+        margin-top: 80px; 
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Car Dealership</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="cars.html">Cars</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="search-bar">
+      <input type="text" placeholder="Search here..." />
+      <button>Search</button>
+    </section>
+
+    <section class="hero" style="font-family: Quantico", serif; ">
+      <h2>Find Your Dream Car</h2>
+      <p>
+        Explore our collection of high-quality vehicles with the best deals.
+      </p>
+      <a href="cars.html" class="btn">Browse Cars</a>
+    </section>
+
+    <section class="car-listings">
+      <h2>Featured Cars</h2>
+      <div class="car-grid">
+        <div class="car">
+          <img src="images/porsche.jpg" alt="Porsche" />
+          <div class="car-info">
+            <h3> Porsche </h3>
+            <a href="porsche.html" class="btn">View</a>
+          </div>
+        </div>
+
+        <div class="car">
+          <img src="images/bmw.jpg" alt="2022 BMW M4" />
+          <div class="car-info">
+            <h3> BMW </h3>
+            <!-- <p class="price">₹ 1.53 Cr.</p> -->
+            <a href="bmw.html" class="btn">View</a>
+          </div>
+        </div>
+
+        <div class="car">
+          <img src="images/ford.jpg" alt="2023 Ford Mustang" />
+          <div class="car-info">
+            <h3> Ford </h3>
+            <!-- <p class="price">₹ 74.60 lakh</p> -->
+            <a href="ford.html" class="btn">View</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <p>&copy; 2025 Car Dealership | Designed for Car Enthusiasts 🚘</p>
+    </footer>
+  </body>
+</html>
